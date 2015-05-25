@@ -1,0 +1,35 @@
+/* CONFIGURABLE VARIABLES */
+@std: 8px;
+
+
+/* UTILITY MIXINS */
+.content { padding: 0 @std*3; }
+
+.subvoc { font-style: italic; }
+
+
+/* HTML ELEMENTS */
+body {
+  font-family: Arial;
+  font-size: @std*2;
+  line-height: @std*3;
+}
+
+h1 {
+  font-size: @std*3;
+  margin: @std*3 0;
+}
+
+p {
+  margin: @std*3 0;
+}
+
+button {
+  margin: @std*3 0;
+  border: none;
+  border-radius: @std;
+  background-color: black;
+  padding: @std*2 @std*3;
+  color: white;
+  cursor: pointer;
+}

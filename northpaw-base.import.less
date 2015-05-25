@@ -1,0 +1,32 @@
+/* CONFIGURABLE VARIABLES */
+@np-purple: 274;
+@base-color: hsl(@np-purple,100%,30%);
+
+
+/* MIXINS */
+.highlight-stripe {
+  border-top: 2px @base-color solid;
+  border-bottom: 2px @base-color solid;
+  background-color: lighten(desaturate(@base-color, 70%),40%);
+}
+
+
+/* CSS RULES */
+.navbar {
+  margin: @std*5 0;
+  .highlight-stripe;
+  padding: @std*2;
+  font-size: @std;
+}
+
+.main {
+  .content;
+}
+
+.page-title {
+  color: @base-color;
+}
+
+.action-primary {
+  background-color: @base-color;
+}

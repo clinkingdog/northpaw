@@ -15,10 +15,16 @@
 
 /* CSS RULES */
 .navbar {
-  margin: @std*5 0;
+  margin: @std*3 0;
   .highlight-stripe;
-  padding: @std*2;
+  padding: @std;
   font-size: 0.5em;
+}
+@media screen and (min-width: @mobile-limit) {
+  .navbar {
+    margin: @std*5 0;
+    padding: @std*2;
+  }
 }
 
 .main {

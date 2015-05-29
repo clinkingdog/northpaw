@@ -1,5 +1,6 @@
 /* CONFIGURABLE VARIABLES */
 @std: 8px;
+@mobile-limit: 390px;
 
 
 /* UTILITY MIXINS */
@@ -19,7 +20,7 @@ h1 {
   font-size: 1.25em;
   margin: @std*3 0;
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: @mobile-limit) {
   h1 {
     font-size: 1.5em;
   }

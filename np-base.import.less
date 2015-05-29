@@ -1,13 +1,14 @@
 /* CONFIGURABLE VARIABLES */
 @np-purple: 274;
 @base-color: hsl(@np-purple,100%,30%);
+@pale-color: lighten(desaturate(@base-color, 70%),40%);
 
 
 /* MIXINS */
 .highlight-stripe {
   border-top: 2px @base-color solid;
   border-bottom: 2px @base-color solid;
-  background-color: lighten(desaturate(@base-color, 70%),40%);
+  background-color: @pale-color;
 }
 
 

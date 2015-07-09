@@ -1,4 +1,5 @@
 @import "modules/highlight-ribbon.import.less";
+@import "modules/link--external.import.less";
 
 /* CSS RULES */
 .navbar {
@@ -23,11 +24,5 @@
 }
 
 .reference {
-  font-style: italic;
-  color: @color-base;
-  text-decoration: none;
-  
-  &:hover {
-    text-decoration: underline;
-  }
+  .link--external;
 }

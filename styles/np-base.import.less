@@ -1,23 +1,9 @@
-/* MIXINS */
-.highlight-stripe {
-  border-top: 2px @color-base solid;
-  border-bottom: 2px @color-base solid;
-  background-color: @color-pale;
-}
-
+@import "modules/highlight-ribbon.import.less";
 
 /* CSS RULES */
 .navbar {
-  margin: @unit*3 0;
-  .highlight-stripe;
-  padding: @unit;
-  font-size: 0.5em;
-}
-@media screen and (min-width: @mobile-limit) {
-  .navbar {
-    margin: @unit*5 0;
-    padding: @unit*2;
-  }
+  .highlight-ribbon;
+  font-size: 0.5rem;
 }
 
 .main {

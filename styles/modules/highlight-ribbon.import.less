@@ -8,6 +8,14 @@
   border-top: 2px @color-base solid;
   border-bottom: 2px @color-base solid;
   background-color: @color-pale;
+  background-image:
+    linear-gradient(
+      to right,
+      @color-pale--shadow    0%,
+      @color-pale            4%,
+      @color-pale           96%,
+      @color-pale--shadow  100%
+    );
   padding: @unit;
 
   @media screen and (min-width: @mobile-limit) {

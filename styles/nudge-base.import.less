@@ -1,10 +1,10 @@
 /* CONFIGURABLE VARIABLES */
-@std: 8px;
+@unit: 8px;
 @mobile-limit: 390px;
 
 
 /* UTILITY MIXINS */
-.content { max-width: 56em; margin: 0 auto; padding: 0 @std*3; }
+.content { max-width: 56em; margin: 0 auto; padding: 0 @unit*3; }
 
 .subvoc { font-style: italic; font-size: 0.9em; }
 
@@ -18,7 +18,7 @@ html {
 
 h1 {
   font-size: 1.25em;
-  margin: @std*3 0;
+  margin: @unit*3 0;
 }
 @media screen and (min-width: @mobile-limit) {
   h1 {
@@ -27,15 +27,15 @@ h1 {
 }
 
 p {
-  margin: @std*3 0;
+  margin: @unit*3 0;
 }
 
 button {
-  margin: @std*3 0;
+  margin: @unit*3 0;
   border: none;
-  border-radius: @std;
+  border-radius: @unit;
   background-color: black;
-  padding: @std*2 @std*3;
+  padding: @unit*2 @unit*3;
   color: white;
   font-size: 0.8em;
   cursor: pointer;
